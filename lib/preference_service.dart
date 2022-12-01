@@ -169,7 +169,8 @@ class PrefService {
   }
 
   static void showError(BuildContext context, String message) {
-    Scaffold.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(snackBar(
+    //Scaffold.of(context).showSnackBar(SnackBar(
       content: Text(message),
     ));
   }
