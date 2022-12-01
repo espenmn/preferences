@@ -56,7 +56,7 @@ class PreferenceDialogState extends State<PreferenceDialog> {
         ..addAll(widget.cancelText == null
             ? []
             : [
-                FlatButton(
+                TextButton(
                   child: Text(widget.cancelText),
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -66,7 +66,7 @@ class PreferenceDialogState extends State<PreferenceDialog> {
         ..addAll(widget.submitText == null
             ? []
             : [
-                FlatButton(
+                TextButton(
                   child: Text(widget.submitText),
                   onPressed: () {
                     if (widget.onlySaveOnSubmit) {
